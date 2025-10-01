@@ -1,0 +1,28 @@
+Account: 4
+Channel: email
+Expected Intent: churn_risk
+Expected Sentiment: negative
+Expected Risk Score: 0.9
+==================================================
+
+Subject: Considering Other Options
+
+Hi,
+
+I've been a Jobber customer for about 6 months now, but I'm starting to have some concerns about whether this is still the right fit for my business.
+
+Don't get me wrong - the software does what it says it will do. But I'm finding that the cost is adding up, and I'm not sure I'm getting enough value for what I'm paying. Between the monthly subscription, the payment processing fees, and some of the add-on features, it's becoming a significant expense.
+
+I've been looking at some other options like ServiceTitan and Housecall Pro, and they seem to offer similar features at different price points. ServiceTitan in particular has some advanced features for route optimization that could save me fuel costs.
+
+I'm also frustrated with the mobile app performance. My crew is constantly complaining that it's slow and sometimes crashes when they're trying to update job statuses or take photos. This is causing issues with our customer communication because updates aren't getting through in real-time.
+
+Before I make any decisions, I wanted to give you guys a chance to address these concerns. Is there anything you can do about the pricing? And are there any plans to improve the mobile app performance?
+
+I really don't want to switch systems because I know how disruptive that can be, but I need to do what's best for my business.
+
+Let me know if we can discuss this.
+
+Robert Davis
+PowerWash Pro
+rob@powerwashpro.com

@@ -1,0 +1,23 @@
+Account: 1
+Channel: email
+Expected Intent: support_request
+Expected Sentiment: negative
+Expected Risk Score: 0.7
+==================================================
+
+Hi Support Team,
+
+I hope you're doing well. I wanted to reach out because we're having some challenges with the new invoicing feature that was rolled out last month. 
+
+Our team has been trying to customize the invoice templates to match our branding, but we're running into issues with the logo placement and color schemes. The current options don't seem to support our specific requirements.
+
+Additionally, we've noticed that the automatic tax calculations aren't working correctly for our service area. We operate across multiple tax jurisdictions, and it seems like the system is applying the wrong rates in some cases.
+
+This is becoming urgent because we have several large commercial projects completing next week, and we need to get accurate invoices out to our clients. Our cash flow depends on prompt billing.
+
+Could someone from your technical team give me a call today or tomorrow? We really need to get this sorted out quickly.
+
+Thanks for your help,
+Maria Rodriguez
+Sunshine Landscaping
+(555) 123-4567

@@ -1,0 +1,26 @@
+Account: 3
+Channel: email
+Expected Intent: expansion_inquiry
+Expected Sentiment: positive
+Expected Risk Score: 0.2
+==================================================
+
+Subject: Pricing Question - Multiple Location Discount?
+
+Hi,
+
+I run Elite House Cleaning, and we've been really happy with Jobber over the past year. It's made a huge difference in how we manage our operations.
+
+I'm writing because we're about to expand into two new cities, and I wanted to understand if there are any volume discounts available for multiple locations. We're projecting that we'll need to add about 15-20 more team members across the new locations.
+
+Currently we're on the Growing Business plan, but with the expansion, we'd probably need the Professional plan features for better territory management and advanced reporting.
+
+Also, I saw that you have a new customer portal feature. Could you tell me more about how that works? Our clients are always asking for better ways to track their service history and make changes to their recurring cleanings.
+
+I'd love to schedule a call to discuss our expansion plans and see how Jobber can support our growth. We're planning to launch the new locations in the next 3 months.
+
+Best regards,
+Sarah Williams
+Elite House Cleaning
+sarah@elitecleaning.com
+(555) 987-6543

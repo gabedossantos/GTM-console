@@ -1,0 +1,102 @@
+id,account_id,contact_id,channel,content,timestamp
+1,1,1,email,"Hi Support Team,
+
+I hope you're doing well. I wanted to reach out because we're having some challenges with the new invoicing feature that was rolled out last month. 
+
+Our team has been trying to customize the invoice templates to match our branding, but we're running into issues with the logo placement and color schemes. The current options don't seem to support our specific requirements.
+
+Additionally, we've noticed that the automatic tax calculations aren't working correctly for our service area. We operate across multiple tax jurisdictions, and it seems like the system is applying the wrong rates in some cases.
+
+This is becoming urgent because we have several large commercial projects completing next week, and we need to get accurate invoices out to our clients. Our cash flow depends on prompt billing.
+
+Could someone from your technical team give me a call today or tomorrow? We really need to get this sorted out quickly.
+
+Thanks for your help,
+Maria Rodriguez
+Sunshine Landscaping
+(555) 123-4567",2025-09-01T23:15:07.944359
+2,2,3,call,"Call transcript - Mike Chen, QuickFix Plumbing
+
+Mike: Hey, thanks for taking my call. I've been using Jobber for about 8 months now, and overall it's been great for our business. We've seen a real improvement in our scheduling efficiency and customer communication.
+
+Support: That's wonderful to hear, Mike. What can I help you with today?
+
+Mike: Well, I'm actually looking at expanding my subscription. We're growing pretty fast - added three new trucks and five employees in the last quarter. I'm interested in the advanced features, particularly the GPS tracking and the advanced reporting.
+
+Support: Congratulations on the growth! That's exactly the kind of success story we love to hear. Let me walk you through our Professional plan features...
+
+Mike: Yeah, the GPS tracking would be huge for us. Right now I'm manually checking where my guys are, and it's eating up a lot of my time. And I heard you have some new features coming for inventory management?
+
+Support: Absolutely! Our inventory management module just entered beta, and it integrates directly with your job scheduling. You can track parts usage, set reorder points, and even generate purchase orders automatically.
+
+Mike: That sounds perfect. We're losing money on inefficient inventory right now. What would the upgrade cost, and when could we get started?
+
+Support: For your size operation, you'd be looking at the Professional plan at $129 per month, up from your current $79. The inventory module would be an additional $39 per month. I can get you set up today if you'd like.
+
+Mike: Let's do it. This is exactly what we need to scale properly.",2025-09-07T23:15:07.944667
+3,3,4,email,"Subject: Pricing Question - Multiple Location Discount?
+
+Hi,
+
+I run Elite House Cleaning, and we've been really happy with Jobber over the past year. It's made a huge difference in how we manage our operations.
+
+I'm writing because we're about to expand into two new cities, and I wanted to understand if there are any volume discounts available for multiple locations. We're projecting that we'll need to add about 15-20 more team members across the new locations.
+
+Currently we're on the Growing Business plan, but with the expansion, we'd probably need the Professional plan features for better territory management and advanced reporting.
+
+Also, I saw that you have a new customer portal feature. Could you tell me more about how that works? Our clients are always asking for better ways to track their service history and make changes to their recurring cleanings.
+
+I'd love to schedule a call to discuss our expansion plans and see how Jobber can support our growth. We're planning to launch the new locations in the next 3 months.
+
+Best regards,
+Sarah Williams
+Elite House Cleaning
+sarah@elitecleaning.com
+(555) 987-6543",2025-09-26T23:15:07.944736
+4,4,5,email,"Subject: Considering Other Options
+
+Hi,
+
+I've been a Jobber customer for about 6 months now, but I'm starting to have some concerns about whether this is still the right fit for my business.
+
+Don't get me wrong - the software does what it says it will do. But I'm finding that the cost is adding up, and I'm not sure I'm getting enough value for what I'm paying. Between the monthly subscription, the payment processing fees, and some of the add-on features, it's becoming a significant expense.
+
+I've been looking at some other options like ServiceTitan and Housecall Pro, and they seem to offer similar features at different price points. ServiceTitan in particular has some advanced features for route optimization that could save me fuel costs.
+
+I'm also frustrated with the mobile app performance. My crew is constantly complaining that it's slow and sometimes crashes when they're trying to update job statuses or take photos. This is causing issues with our customer communication because updates aren't getting through in real-time.
+
+Before I make any decisions, I wanted to give you guys a chance to address these concerns. Is there anything you can do about the pricing? And are there any plans to improve the mobile app performance?
+
+I really don't want to switch systems because I know how disruptive that can be, but I need to do what's best for my business.
+
+Let me know if we can discuss this.
+
+Robert Davis
+PowerWash Pro
+rob@powerwashpro.com",2025-09-29T23:15:07.944777
+5,5,6,email,"Subject: Feature Request - Integration with QuickBooks Enterprise
+
+Hello Jobber Team,
+
+I hope this message finds you well. We've been using Jobber for our HVAC business for over two years now, and it's been instrumental in helping us grow from a 5-person operation to a 25-person company.
+
+I wanted to reach out with a feature request that would be extremely valuable for our business. We use QuickBooks Enterprise for our accounting, and while the standard QuickBooks integration works well, we need some additional functionality that's specific to the Enterprise version.
+
+Specifically, we need:
+1. Support for job costing with multiple cost centers
+2. Integration with QB Enterprise's advanced inventory tracking
+3. Support for progress billing on large commercial projects
+
+Our commercial HVAC projects often run 3-6 months, and we need to be able to bill milestone payments while tracking costs against specific job phases. The current integration doesn't handle this level of complexity.
+
+I know you're always working on new features, and I wanted to see if this might be something on your roadmap. We'd be happy to participate in a beta program if you decide to develop this functionality.
+
+Also, I wanted to mention that we're probably going to need to add 5-8 more user licenses in the next quarter as we continue to grow. The return on investment with Jobber has been fantastic.
+
+Thanks for all the great work you do!
+
+Lisa Johnson
+General Manager
+City HVAC Solutions
+lisa@cityhvac.com
+(555) 555-0123",2025-09-08T23:15:07.944825

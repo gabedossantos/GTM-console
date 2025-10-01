@@ -1,0 +1,26 @@
+Account: 2
+Channel: call
+Expected Intent: upgrade_inquiry
+Expected Sentiment: positive
+Expected Risk Score: 0.1
+==================================================
+
+Call transcript - Mike Chen, QuickFix Plumbing
+
+Mike: Hey, thanks for taking my call. I've been using Jobber for about 8 months now, and overall it's been great for our business. We've seen a real improvement in our scheduling efficiency and customer communication.
+
+Support: That's wonderful to hear, Mike. What can I help you with today?
+
+Mike: Well, I'm actually looking at expanding my subscription. We're growing pretty fast - added three new trucks and five employees in the last quarter. I'm interested in the advanced features, particularly the GPS tracking and the advanced reporting.
+
+Support: Congratulations on the growth! That's exactly the kind of success story we love to hear. Let me walk you through our Professional plan features...
+
+Mike: Yeah, the GPS tracking would be huge for us. Right now I'm manually checking where my guys are, and it's eating up a lot of my time. And I heard you have some new features coming for inventory management?
+
+Support: Absolutely! Our inventory management module just entered beta, and it integrates directly with your job scheduling. You can track parts usage, set reorder points, and even generate purchase orders automatically.
+
+Mike: That sounds perfect. We're losing money on inefficient inventory right now. What would the upgrade cost, and when could we get started?
+
+Support: For your size operation, you'd be looking at the Professional plan at $129 per month, up from your current $79. The inventory module would be an additional $39 per month. I can get you set up today if you'd like.
+
+Mike: Let's do it. This is exactly what we need to scale properly.

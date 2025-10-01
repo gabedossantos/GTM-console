@@ -1,0 +1,6 @@
+interaction_id,expected_intent,expected_sentiment,expected_risk_score
+1,support_request,negative,0.7
+2,upgrade_inquiry,positive,0.1
+3,expansion_inquiry,positive,0.2
+4,churn_risk,negative,0.9
+5,feature_request,positive,0.3

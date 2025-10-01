@@ -1,0 +1,7 @@
+id,account_id,name,email,role,created_at
+1,1,Maria Rodriguez,maria@sunshinelandscaping.com,Owner,2025-03-22T23:15:07.942872
+2,1,James Thompson,james@sunshinelandscaping.com,Operations Manager,2025-06-22T23:15:07.943641
+3,2,Mike Chen,mike@quickfixplumbing.com,Owner,2025-08-30T23:15:07.943677
+4,3,Sarah Williams,sarah@elitecleaning.com,Owner,2025-08-30T23:15:07.943694
+5,4,Robert Davis,rob@powerwashpro.com,Owner,2025-07-01T23:15:07.943709
+6,5,Lisa Johnson,lisa@cityhvac.com,General Manager,2025-05-27T23:15:07.943724

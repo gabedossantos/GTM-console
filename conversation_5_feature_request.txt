@@ -1,0 +1,33 @@
+Account: 5
+Channel: email
+Expected Intent: feature_request
+Expected Sentiment: positive
+Expected Risk Score: 0.3
+==================================================
+
+Subject: Feature Request - Integration with QuickBooks Enterprise
+
+Hello Jobber Team,
+
+I hope this message finds you well. We've been using Jobber for our HVAC business for over two years now, and it's been instrumental in helping us grow from a 5-person operation to a 25-person company.
+
+I wanted to reach out with a feature request that would be extremely valuable for our business. We use QuickBooks Enterprise for our accounting, and while the standard QuickBooks integration works well, we need some additional functionality that's specific to the Enterprise version.
+
+Specifically, we need:
+1. Support for job costing with multiple cost centers
+2. Integration with QB Enterprise's advanced inventory tracking
+3. Support for progress billing on large commercial projects
+
+Our commercial HVAC projects often run 3-6 months, and we need to be able to bill milestone payments while tracking costs against specific job phases. The current integration doesn't handle this level of complexity.
+
+I know you're always working on new features, and I wanted to see if this might be something on your roadmap. We'd be happy to participate in a beta program if you decide to develop this functionality.
+
+Also, I wanted to mention that we're probably going to need to add 5-8 more user licenses in the next quarter as we continue to grow. The return on investment with Jobber has been fantastic.
+
+Thanks for all the great work you do!
+
+Lisa Johnson
+General Manager
+City HVAC Solutions
+lisa@cityhvac.com
+(555) 555-0123
