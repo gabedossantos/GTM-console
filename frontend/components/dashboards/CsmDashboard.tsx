@@ -60,11 +60,13 @@ export function CsmDashboard() {
 
   return (
     <div className="space-y-6">
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Card>
-          <CardHeader className="flex items-center justify-between">
+          <CardHeader className="flex items-center justify-between pb-2">
             <CardTitle>Accounts at Risk</CardTitle>
-            <AlertTriangle className="h-5 w-5 text-red-500" />
+            <div className="rounded-full bg-rose-100 p-2">
+              <AlertTriangle className="h-4 w-4 text-rose-600" />
+            </div>
           </CardHeader>
           <CardContent>
             <div className={clsx('text-3xl font-semibold', isDesignTwo ? 'text-rose-300' : 'text-red-600')}>
@@ -93,9 +95,11 @@ export function CsmDashboard() {
         </Card>
 
         <Card>
-          <CardHeader className="flex items-center justify-between">
+          <CardHeader className="flex items-center justify-between pb-2">
             <CardTitle>Engagement Momentum</CardTitle>
-            <TrendingUp className="h-5 w-5 text-emerald-500" />
+            <div className="rounded-full bg-emerald-100 p-2">
+              <TrendingUp className="h-4 w-4 text-emerald-600" />
+            </div>
           </CardHeader>
           <CardContent>
             <div className={clsx('text-3xl font-semibold', isDesignTwo ? 'text-emerald-300' : 'text-emerald-600')}>
@@ -122,9 +126,11 @@ export function CsmDashboard() {
         </Card>
 
         <Card>
-          <CardHeader className="flex items-center justify-between">
+          <CardHeader className="flex items-center justify-between pb-2">
             <CardTitle>Next Best Actions</CardTitle>
-            <Clock className="h-5 w-5 text-brand-500" />
+            <div className="rounded-full bg-brand-100 p-2">
+              <Clock className="h-4 w-4 text-brand-600" />
+            </div>
           </CardHeader>
           <CardContent className={clsx('space-y-3 text-sm', isDesignTwo && 'text-slate-100')}>
             {accounts.slice(0, 4).map((account) => (
@@ -179,8 +185,8 @@ function AccountRow({ account }: { account: DashboardAccount }) {
   return (
     <div
       className={clsx(
-        'flex flex-col gap-3 rounded-lg border p-4 md:flex-row md:items-center md:justify-between',
-        isDesignTwo ? 'border-white/10 bg-white/5' : 'border-slate-200'
+        'group flex flex-col gap-3 rounded-xl border p-5 transition-all duration-300 md:flex-row md:items-center md:justify-between',
+        isDesignTwo ? 'border-white/10 bg-white/5' : 'border-slate-200/60 bg-white hover:border-slate-300 hover:shadow-md'
       )}
     >
       <div>

@@ -13,10 +13,10 @@ export function Badge({ variant = 'default', className, children }: BadgeProps) 
   const designVariant = useDesignVariant();
   const variantStyles: Record<NonNullable<BadgeProps['variant']>, string> = designVariant === 'design1'
     ? {
-        default: 'bg-slate-200 text-slate-700',
-        destructive: 'bg-red-100 text-red-700 border border-red-200',
-        success: 'bg-emerald-100 text-emerald-700 border border-emerald-200',
-        secondary: 'bg-slate-100 text-slate-600 border border-slate-200',
+        default: 'bg-brand-50 text-brand-700 border border-brand-200/60',
+        destructive: 'bg-rose-50 text-rose-700 border border-rose-200/60',
+        success: 'bg-emerald-50 text-emerald-700 border border-emerald-200/60',
+        secondary: 'bg-slate-50 text-slate-600 border border-slate-200/60',
       }
     : {
         default: 'bg-white/10 text-slate-100 border border-white/10 backdrop-blur',

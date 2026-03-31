@@ -46,15 +46,8 @@ export default function HomePage() {
               : 'bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 text-slate-100'
           )}
         >
-          <header
-            className={clsx(
-              'border-b transition',
-              designVariant === 'design1'
-                ? 'border-slate-200 bg-white/90 backdrop-blur'
-                : 'border-white/10 bg-white/5 backdrop-blur'
-            )}
-          >
-            <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 py-4">
+          <header className="border-b border-slate-200 bg-white/90 backdrop-blur transition">
+            <div className="mx-auto flex max-w-[1600px] flex-wrap items-center justify-between gap-4 px-4 py-4 md:px-6 lg:px-8">
               <div>
                 <h1
                   className={clsx(
@@ -75,59 +68,8 @@ export default function HomePage() {
               </div>
 
               <div className="flex flex-wrap items-center gap-4">
-                <div className="flex items-center gap-2">
-                  <span
-                    className={clsx(
-                      'text-xs font-semibold uppercase tracking-wide',
-                      designVariant === 'design1' ? 'text-slate-500' : 'text-slate-300'
-                    )}
-                  >
-                    Design
-                  </span>
-                  <div
-                    className={clsx(
-                      'inline-flex overflow-hidden rounded-full border text-xs font-semibold shadow-sm transition',
-                      designVariant === 'design1'
-                        ? 'border-slate-200 bg-white text-slate-600'
-                        : 'border-white/20 bg-white/10 text-slate-200'
-                    )}
-                    role="group"
-                    aria-label="Choose console design"
-                  >
-                    {(
-                      [
-                        { value: 'design1', label: 'Design 1' },
-                        { value: 'design2', label: 'Design 2' },
-                      ] as { value: DesignVariant; label: string }[]
-                    ).map((option) => (
-                      <button
-                        key={option.value}
-                        type="button"
-                        onClick={() => setDesignVariant(option.value)}
-                        className={clsx(
-                          'px-3 py-1.5 transition-colors focus:outline-none',
-                          option.value === designVariant
-                            ? designVariant === 'design1'
-                              ? 'bg-brand-600 text-white'
-                              : 'bg-emerald-400/90 text-slate-900'
-                            : designVariant === 'design1'
-                            ? 'hover:bg-slate-100/60'
-                            : 'text-slate-200 hover:bg-white/10'
-                        )}
-                      >
-                        {option.label}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
                 <div className="flex items-center gap-3">
-                  <label
-                    className={clsx(
-                      'text-xs font-semibold uppercase tracking-wide',
-                      designVariant === 'design1' ? 'text-slate-500' : 'text-slate-300'
-                    )}
-                  >
+                  <label className="text-xs font-semibold uppercase tracking-wide text-slate-500">
                     Account Focus
                   </label>
                   <select
@@ -154,10 +96,25 @@ export default function HomePage() {
             </div>
           </header>
 
-          <main className="mx-auto grid max-w-7xl gap-8 px-6 py-8">
-            <CsmDashboard />
-            <InsightsOverview />
-            {selectedAccountId && <AccountTimeline accountId={selectedAccountId} />}
+          <main className="mx-auto max-w-[1600px] px-4 py-8 md:px-6 lg:px-8">
+            <div className="flex flex-col lg:flex-row gap-8 items-start animate-fade-in">
+              {/* Main content column */}
+              <div className="flex-1 w-full space-y-8 min-w-0">
+                <CsmDashboard />
+                <InsightsOverview />
+              </div>
+
+              {/* Right Sidebar - Sticky */}
+              <div className="w-full lg:w-[380px] xl:w-[450px] shrink-0 lg:sticky lg:top-8 animate-slide-up">
+                {selectedAccountId ? (
+                  <AccountTimeline accountId={selectedAccountId} />
+                ) : (
+                  <div className="flex h-[400px] items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-white/50 p-8 text-center text-sm text-slate-500 shadow-sm backdrop-blur-sm transition-all hover:bg-white/80">
+                    <p>Select an account to view its timeline and ask the Co-Pilot.</p>
+                  </div>
+                )}
+              </div>
+            </div>
           </main>
         </div>
       </DesignProvider>

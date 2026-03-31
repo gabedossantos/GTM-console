@@ -58,8 +58,8 @@ export function InsightsOverview() {
               <div
                 key={insight.id}
                 className={clsx(
-                  'rounded-lg border p-4',
-                  isDesignTwo ? 'border-white/10 bg-white/5 text-slate-200' : 'border-slate-200'
+                  'rounded-xl border p-5 transition-all duration-300',
+                  isDesignTwo ? 'border-white/10 bg-white/5 text-slate-200' : 'border-slate-200/60 bg-slate-50/50 hover:bg-white hover:shadow-md hover:border-slate-300'
                 )}
               >
                 <div
@@ -133,11 +133,11 @@ function Metric({ value, label }: { value: string; label: string }) {
   return (
     <div
       className={clsx(
-        'rounded-lg border p-4',
-        isDesignTwo ? 'border-white/10 bg-white/5' : 'border-slate-200 bg-slate-50'
+        'flex flex-col items-center justify-center rounded-xl border p-4 transition-all',
+        isDesignTwo ? 'border-white/10 bg-white/5 hover:bg-white/10' : 'border-slate-200/60 bg-slate-50/50 hover:bg-white hover:shadow-sm'
       )}
     >
-      <p className={clsx('text-lg font-semibold', isDesignTwo ? 'text-white' : 'text-slate-700')}>{value}</p>
+      <p className={clsx('text-2xl font-bold tracking-tight', isDesignTwo ? 'text-white' : 'text-brand-700')}>{value}</p>
       <p className={clsx('text-xs uppercase tracking-wide', isDesignTwo ? 'text-slate-300' : 'text-slate-500')}>
         {label}
       </p>

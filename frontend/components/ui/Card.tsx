@@ -13,9 +13,9 @@ export function Card({ className, children }: CardProps) {
   return (
     <div
       className={clsx(
-        'rounded-xl border transition-transform duration-300',
+        'rounded-2xl border transition-all duration-300 overflow-hidden',
         variant === 'design1'
-          ? 'border-slate-200 bg-white shadow-sm'
+          ? 'border-slate-200/80 bg-white shadow-sm hover:-translate-y-0.5 hover:shadow-md hover:border-slate-300 backdrop-blur-sm'
           : 'border-white/10 bg-white/10 text-slate-100 shadow-[0_20px_45px_rgba(52,211,153,0.18)] backdrop-blur-lg hover:-translate-y-1 hover:shadow-[0_30px_70px_rgba(16,185,129,0.25)]',
         className
       )}
@@ -30,8 +30,8 @@ export function CardHeader({ className, children }: CardProps) {
   return (
     <div
       className={clsx(
-        'px-5 py-4',
-        variant === 'design1' ? 'border-b border-slate-200' : 'border-b border-white/10',
+        'px-6 py-5',
+        variant === 'design1' ? 'border-b border-slate-100/80 bg-slate-50/50' : 'border-b border-white/10',
         className
       )}
     >
@@ -45,8 +45,8 @@ export function CardTitle({ className, children }: CardProps) {
   return (
     <h3
       className={clsx(
-        'text-sm font-semibold',
-        variant === 'design1' ? 'text-slate-700' : 'text-white',
+        'text-base font-semibold tracking-tight',
+        variant === 'design1' ? 'text-slate-800' : 'text-white',
         className
       )}
     >
@@ -60,7 +60,7 @@ export function CardContent({ className, children }: CardProps) {
   return (
     <div
       className={clsx(
-        'px-5 py-4 text-sm',
+        'px-6 py-5 text-sm',
         variant === 'design1' ? 'text-slate-600' : 'text-slate-200',
         className
       )}

@@ -68,10 +68,10 @@ export function AccountTimeline({ accountId }: AccountTimelineProps) {
           <div className="flex flex-col gap-2 md:flex-row">
             <input
               className={clsx(
-                'flex-1 rounded-md border px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-500/60',
+                'flex-1 rounded-xl border px-4 py-2.5 text-sm shadow-[inset_0_1px_2px_rgba(0,0,0,0.02)] focus:outline-none focus:ring-2 focus:ring-brand-500/30 transition-all',
                 isDesignTwo
                   ? 'border-white/10 bg-white/10 text-slate-100 placeholder:text-slate-400'
-                  : 'border-slate-200 bg-white text-slate-800 focus:border-brand-500'
+                  : 'border-slate-200 bg-slate-50/50 text-slate-800 placeholder:text-slate-400 focus:border-brand-400 focus:bg-white'
               )}
               placeholder="What is the current customer intent?"
               value={query}
@@ -80,10 +80,10 @@ export function AccountTimeline({ accountId }: AccountTimelineProps) {
             />
             <button
               className={clsx(
-                'inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium shadow-sm transition',
+                'inline-flex items-center justify-center rounded-xl px-5 py-2.5 text-sm font-semibold shadow-sm transition-all active:scale-95 hover:-translate-y-px hover:shadow-md',
                 isDesignTwo
                   ? 'bg-emerald-400 text-slate-900 hover:bg-emerald-300'
-                  : 'bg-brand-600 text-white hover:bg-brand-500'
+                  : 'bg-brand-600 text-white hover:bg-brand-700 hover:shadow-brand-500/25'
               )}
               onClick={handleRagQuery}
               type="button"
@@ -94,7 +94,7 @@ export function AccountTimeline({ accountId }: AccountTimelineProps) {
           {ragAnswer && (
             <div
               className={clsx(
-                'rounded-md border p-4 text-sm',
+                'rounded-xl border p-4 text-sm animate-fade-in',
                 isDesignTwo
                   ? 'border-emerald-400/40 bg-emerald-400/10 text-emerald-200'
                   : 'border-brand-100 bg-brand-50 text-brand-800'
@@ -170,14 +170,14 @@ const TimelineItem: FC<TimelineItemProps> = ({ interaction, onFeedback }: Timeli
   return (
     <div
       className={clsx(
-        'relative border-l pl-6',
-        isDesignTwo ? 'border-white/10' : 'border-slate-200'
+        'relative border-l-2 pl-6 pb-6 last:pb-0',
+        isDesignTwo ? 'border-white/10' : 'border-slate-100'
       )}
     >
       <span
         className={clsx(
-          'absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full border',
-          isDesignTwo ? 'border-white/20 bg-white/10' : 'border-slate-200 bg-white'
+          'absolute -left-[13px] flex h-6 w-6 items-center justify-center rounded-full border bg-white shadow-sm transition-transform hover:scale-110',
+          isDesignTwo ? 'border-white/20 bg-white/10' : 'border-slate-200'
         )}
       >
         <Icon className={clsx('h-4 w-4', isDesignTwo ? 'text-emerald-200' : 'text-slate-500')} />
@@ -212,21 +212,21 @@ const TimelineItem: FC<TimelineItemProps> = ({ interaction, onFeedback }: Timeli
         {insight && (
           <div
             className={clsx(
-              'rounded-md border p-3',
-              isDesignTwo ? 'border-white/10 bg-white/5' : 'border-slate-200 bg-slate-50'
+              'rounded-xl border p-4 transition-all hover:border-slate-300',
+              isDesignTwo ? 'border-white/10 bg-white/5' : 'border-slate-200/60 bg-slate-50/50 hover:bg-white'
             )}
           >
-            <p className={clsx('text-sm font-medium', isDesignTwo ? 'text-white' : 'text-slate-700')}>Summary</p>
-            <p className={clsx('mt-1 text-sm', isDesignTwo ? 'text-slate-200' : 'text-slate-600')}>
+            <p className={clsx('text-sm font-semibold', isDesignTwo ? 'text-white' : 'text-slate-800')}>Insight Summary</p>
+            <p className={clsx('mt-1.5 text-sm leading-relaxed', isDesignTwo ? 'text-slate-200' : 'text-slate-600')}>
               {insight.summary}
             </p>
-            <div className={clsx('mt-3 flex items-center gap-3 text-xs', isDesignTwo ? 'text-slate-300' : 'text-slate-500')}>
-              <span>Was this helpful?</span>
+            <div className={clsx('mt-4 flex items-center gap-3 text-xs', isDesignTwo ? 'text-slate-300' : 'text-slate-500')}>
+              <span className="font-medium text-slate-400">Was this helpful?</span>
               <button
                 type="button"
                 onClick={() => onFeedback(true)}
                 className={clsx(
-                  'inline-flex items-center gap-1 rounded-md border px-2 py-1 transition',
+                  'inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 transition-all hover:-translate-y-0.5',
                   isDesignTwo
                     ? 'border-emerald-400/40 text-emerald-200 hover:bg-emerald-400/10'
                     : 'border-slate-200 text-emerald-600 hover:border-emerald-200 hover:bg-emerald-50'
@@ -238,7 +238,7 @@ const TimelineItem: FC<TimelineItemProps> = ({ interaction, onFeedback }: Timeli
                 type="button"
                 onClick={() => onFeedback(false)}
                 className={clsx(
-                  'inline-flex items-center gap-1 rounded-md border px-2 py-1 transition',
+                  'inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 transition-all hover:-translate-y-0.5',
                   isDesignTwo
                     ? 'border-rose-400/40 text-rose-200 hover:bg-rose-400/10'
                     : 'border-slate-200 text-red-600 hover:border-red-200 hover:bg-red-50'
